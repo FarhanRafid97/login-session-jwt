@@ -1,0 +1,27 @@
+GET http://localhost:8010/users
+Authorization:  bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiZmFyaGFuMjIiLCJlbWFpbCI6ImZhcmhhbjIyQGdtYWlsLmNvbSIsImlhdCI6MTY0OTgzNjI0NiwiZXhwIjoxNjQ5ODM2MjY2fQ.dT4hVpul9LSYlWG20ZVQW5KFOi66i4BTK5WmHLiRO0k
+###
+POST http://localhost:8010/users
+Content-Type: application/json
+
+{
+    "name":"farhan22",
+    "email":"farhan22@gmail.com",
+    "password":"123",
+    "conPassword":"1223"
+}
+
+###
+POST http://localhost:8010/login
+Content-Type: application/json
+
+{
+    "email":"farhan22@gmail.com",
+    "password":"123"  
+}
+
+###
+GET http://localhost:8010/token
+
+###
+DELETE http://localhost:8000/logout
